@@ -19,18 +19,17 @@
     <meta name="description" content="本文主要介绍如何快速搭建一个私人博客（以发布一个在线网页为目标）。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="A Blog Is All You Need">
-<meta property="og:url" content="http://cswbyu.github.io/20230312-A-Blog-Is-All-You-Need">
+<meta property="og:url" content="https://cswbyu.github.io/20230312-A-Blog-Is-All-You-Need">
 <meta property="og:site_name" content="cswbyu&#39;s blog">
 <meta property="og:description" content="本文主要介绍如何快速搭建一个私人博客（以发布一个在线网页为目标）。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://cswbyu.github.io/img/post_cover/20230312-A-Blog-Is-All-You-Need.jpg">
+<meta property="og:image" content="https://cswbyu.github.io/img/post_cover/20230312-A-Blog-Is-All-You-Need.jpg">
 <meta property="article:published_time" content="2023-03-12T06:58:07.000Z">
-<meta property="article:modified_time" content="2023-03-12T07:31:19.791Z">
+<meta property="article:modified_time" content="2023-03-12T09:17:25.912Z">
 <meta property="article:author" content="cswbyu">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Fluid">
+<meta property="article:tag" content="技术经验">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://cswbyu.github.io/img/post_cover/20230312-A-Blog-Is-All-You-Need.jpg">
+<meta name="twitter:image" content="https://cswbyu.github.io/img/post_cover/20230312-A-Blog-Is-All-You-Need.jpg">
   
   
   
@@ -274,14 +273,6 @@
             <!-- SEO header -->
             <h1 style="display: none">A Blog Is All You Need</h1>
             
-              <p class="note note-info">
-                
-                  
-                    本文最后更新于：2023年3月12日 下午
-                  
-                
-              </p>
-            
             
               <div class="markdown-body">
                 
@@ -303,7 +294,7 @@
 <h1 id="搭建步骤——以发布一个在线网页为目标"><a href="#搭建步骤——以发布一个在线网页为目标" class="headerlink" title="搭建步骤——以发布一个在线网页为目标"></a>搭建步骤——以发布一个在线网页为目标</h1><p>接下来的一系列步骤以最终能发布一个在线网页为目标，更细节、个性化的操作可以参考<a href="#%E6%90%AD%E5%BB%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88">前面介绍的官方文档</a>完成。</p>
 <h2 id="本地静态网站的搭建"><a href="#本地静态网站的搭建" class="headerlink" title="本地静态网站的搭建"></a>本地静态网站的搭建</h2><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>首先确保前面提到的 <code>Node.js</code> 以及 <code>Git</code> 都已正确安装。在终端分别输入命令 <code>node -v</code> 以及命令 <code>git -v</code> ，如果上述两者都已安装成功，那么会正确显示版本号。</p>
 <h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 <code>Hexo</code></h3><p>该步骤非常简单，只需要在终端输入命令 <code>npm install hexo-cli -g</code> 。安装完毕后同样可以在终端输入命令 <code>hexo -v</code> 进行检测，如果正确输出版本号，则说明安装成功。</p>
-<h3 id="生成博客文件夹"><a href="#生成博客文件夹" class="headerlink" title="生成博客文件夹"></a>生成博客文件夹</h3><p>随便挑选一个你希望存放博客文件夹的目录（比如D盘），在该目录下打开 <code>Git Bash</code> 并输入命令</p>
+<h3 id="生成博客文件夹"><a href="#生成博客文件夹" class="headerlink" title="生成博客文件夹"></a>生成博客文件夹</h3><p>随便挑选一个希望存放博客文件夹的目录（比如D盘），在该目录下打开 <code>Git Bash</code> 并输入命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo init my_new_blog<br></code></pre></td></tr></table></figure>
 
 <p>新建一个名为 <code>my_new_blog</code> 的博客文件夹，再使用 <code>cd my_new_blog</code> 进入该文件夹。</p>
@@ -315,24 +306,24 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span>  <span class="hljs-comment"># 指定主题</span><br><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span>  <span class="hljs-comment"># 指定语言，会影响主题显示的语言，按需修改</span><br></code></pre></td></tr></table></figure>
 
 <p>重新输入命令 <code>hexo s</code> 并访问 <code>localhost:4000</code> ，即可看到修改完主题后的静态网页。值得注意的是，文件 <code>_config.fluid.yml</code> 是主题 <code>Fluid</code> 的配置文件，注释详尽，可以结合用户手册的<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">配置指南</a>对其进行修改，实现网站风格的个性化定制。</p>
-<h2 id="将本地静态网站发布到-GitHub-上"><a href="#将本地静态网站发布到-GitHub-上" class="headerlink" title="将本地静态网站发布到 GitHub 上"></a>将本地静态网站发布到 <code>GitHub</code> 上</h2><p>首先登陆自己的 <code>GitHub</code> 账号，新建一个仓库，仓库名必须按照 <code>你的GitHub用户名.github.io</code> 的方式命名，否则会发布不成功。</p>
+<h2 id="将本地静态网站发布到-GitHub-上"><a href="#将本地静态网站发布到-GitHub-上" class="headerlink" title="将本地静态网站发布到 GitHub 上"></a>将本地静态网站发布到 <code>GitHub</code> 上</h2><p>首先登陆自己的 <code>GitHub</code> 账号，新建一个仓库，仓库名必须按照 <code>GitHub用户名.github.io</code> 的方式命名，否则会发布不成功。</p>
 <p>然后建立当前主机与自己 <code>GitHub</code> 账号的 <code>SSH</code> 连接，具体可参考 <code>GitHub</code> 关于这一部分的<a target="_blank" rel="noopener" href="https://docs.github.com/cn/authentication/connecting-to-github-with-ssh">官方文档</a>。</p>
 <p>修改博客目录下 <code>_config.yml</code> 文件的参数：</p>
 <ul>
 <li><code># URL</code> 部分<ul>
-<li>修改 <code>url:</code> 的值为 <code>https://你的GitHub用户名.github.io</code> ；</li>
+<li>修改 <code>url:</code> 的值为 <code>https://GitHub用户名.github.io</code> ；</li>
 </ul>
 </li>
 <li><code># Deployment</code> 部分<ul>
 <li>修改 <code>type:</code> 的值为 <code>git</code> ；</li>
-<li>修改 <code>repo:</code> 的值为 <code>https://github.com/你的GitHub用户名/你的GitHub用户名.github.io</code> ；</li>
+<li>修改 <code>repo:</code> 的值为 <code>https://github.com/GitHub用户名/GitHub用户名.github.io</code> ；</li>
 <li>修改 <code>branch:</code> 的值为 <code>main</code> 。</li>
 </ul>
 </li>
 </ul>
-<p>现在，在我们正式发布到 <code>GitHub</code> 之前，可以先使用命令 <code>hexo new &quot;你的网页名&quot;</code> 创建一个专属于你的网页。在博客目录下的 <code>source/_posts</code> 中，你可以找到这个网页对应的 <code>.md</code> 文件，修改 <code>.md</code> 文件，就能修改网页内容。</p>
+<p>现在，在我们正式发布到 <code>GitHub</code> 之前，可以先使用命令 <code>hexo new &quot;网页名&quot;</code> 创建一个全新的网页。在博客目录下的 <code>source/_posts</code> 中，找到这个网页对应的 <code>.md</code> 文件，修改 <code>.md</code> 文件，就能修改网页内容。</p>
 <p>然后，执行命令 <code>npm install hexo-deployer-git --save</code> 安装 <code>hexo-deployer-git</code> ，再依次执行命令 <code>hexo cl</code> 、 <code>hexo g</code> 、 <code>hexo d</code> ，从而完成缓存清除、生成博客文件、提交网站到远程仓库的操作。</p>
-<p>最后，访问地址 <code>https://你的用户名.github.io</code> ，将会看到你创建的网站已经被顺利发布，包括你刚刚新创建的网页也被一同提交到了线上。</p>
+<p>最后，访问地址 <code>https://GitHub用户名.github.io</code> ，将会看到所创建的博客网站已经被顺利发布，包括刚刚新创建的网页也被一同提交到了线上。</p>
 <p>至此，本文已经顺利完成任务——发布一个在线网页。要实现更丰富更酷炫的功能，可以进一步阅读<a href="#%E6%90%AD%E5%BB%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88">前面介绍的官方文档</a>。</p>
 
                 
@@ -374,9 +365,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Hexo/">#Hexo</a>
-      
-        <a href="/tags/Fluid/">#Fluid</a>
+        <a href="/tags/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/">#技术经验</a>
       
     </div>
   
@@ -389,7 +378,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>A Blog Is All You Need</div>
-      <div>http://cswbyu.github.io/20230312-A-Blog-Is-All-You-Need</div>
+      <div>https://cswbyu.github.io/20230312-A-Blog-Is-All-You-Need</div>
     </div>
     <div class="license-meta">
       
