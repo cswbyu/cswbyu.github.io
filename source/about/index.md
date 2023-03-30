@@ -46,7 +46,7 @@ layout: about
 
 ## 课外项目
 
-基于深度学习的语义通信系统（进行中）
+跨模态的可编辑语义通信算法研究（进行中）
 
 [龙芯杯竞赛作品：FPGA上六级流水线MIPS微系统的设计与实现](https://github.com/cswbyu/2022_NSCSCC_MoYuSpecialists)
 
