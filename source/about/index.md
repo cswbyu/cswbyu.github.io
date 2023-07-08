@@ -2,64 +2,8 @@
 layout: about
 ---
 
-## 教育背景
+## Education
 
-哈尔滨工业大学（深圳）计算机科学与技术专业，工学学士在读（2020年9月至今）
+### Harbin Institute of Technology, Shenzhen (2020 - Present)
 
-- 前五学期学业成绩排名百分比： **6.3%**
-- 推免优秀加分： **1.8分** ；加分后推免综合排名预计位于 **前3.8%** （详见 http://due.hitsz.edu.cn/info/1061/1966.htm ）
-- 大学英语四级 **592分** ，大学英语六级 **585分**
-
-## 个人荣誉
-
-哈尔滨工业大学（深圳）**赛维时代奖学金计算之星奖**：2020-2021学年
-
-- 本年级获奖人数比例低于 **2%**
-- 系赛维时代奖学金**最高额度**的奖励
-- 学校新闻网页：http://cs.hitsz.edu.cn/info/1019/3380.htm
-
-哈尔滨工业大学（深圳）本科生学业一等奖学金 **（评选比例不超过5%）** ：2021-2022学年
-
-哈尔滨工业大学（深圳）本科生学业二等奖学金：2020-2021学年
-
-哈尔滨工业大学“优秀学生干部”荣誉称号 **（评选比例不超过5%，两次获得）** ：2020-2021、2021-2022学年
-
-哈尔滨工业大学“优秀团员”荣誉称号 **（评选比例不超过5%）** ：2021-2022学年
-
-## 科创竞赛获奖
-
-全国大学生数学建模竞赛：国家级二等奖（2021年）
-
-- 学校新闻网页：https://www.hitsz.edu.cn/article/view/id-129274.html
-
-第六届“龙芯杯”全国大学生计算机系统能力培养大赛：国家级三等奖（2022年）
-
-- 学校新闻网页：https://www.hitsz.edu.cn/article/view/id-135398.html?subjectId=0
-
-第十三届蓝桥杯全国软件和信息技术专业人才大赛：国家级三等奖（2022年）
-
-全国大学生数学建模竞赛：省级一等奖，**两次获得**（2021、2022年）
-
-全国大学生数学竞赛（非数学类）：省级一等奖，**两次获得**（2021、2022年）
-
-第十三届蓝桥杯全国软件和信息技术专业人才大赛：省级一等奖（2022年）
-
-## 课外项目
-
-跨模态的可编辑语义通信算法研究（进行中）
-
-[龙芯杯竞赛作品：FPGA上六级流水线MIPS微系统的设计与实现](https://github.com/cswbyu/2022_NSCSCC_MoYuSpecialists)
-
-[数学建模竞赛作品：“FAST”主动反射面形状调节模型、无人机纯方位无源定位模型](https://github.com/cswbyu/CUMCM_2021A_2022B)
-
-## 部分课内项目
-
-[校园志愿者招募平台的设计与实现](https://github.com/cswbyu/2022_HITSZ_DB-Lab4)
-
-[查询处理算法的模拟实现](https://github.com/cswbyu/2022_HITSZ_DB-Lab5)
-
-[房屋交易价格预测](https://github.com/cswbyu/2022_HITSZ_IBD-Labs-Hw)
-
-[小型类C语言编译器的设计与实现](https://github.com/cswbyu/2022_HITSZ_Compiler-Labs)
-
-[飞机大战游戏系统的设计与实现](https://github.com/cswbyu/2022_HITSZ_IOSC-Labs)
+- Bachelor of Engineering - Computer Science and Technology
